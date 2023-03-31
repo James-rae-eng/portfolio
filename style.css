@@ -1,38 +1,89 @@
 html {
 	scroll-behavior: smooth;
+	font-family: Arial, Verdana, Tahoma, sans-serif;
 }
 
 body {
-	background-color: gray;
+	background: url(images/speckle_background.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 	color: white;
 }
 
 .container {
-	padding-left: 10px;
-	padding-right: 10px;
 	margin: auto;
 	position: relative;
-	width: 100%;
+	width: 95%;
 	max-width: 450px;
 }
 
 p {
-	padding-right: 10px;
+	margin: 0;
+	padding: 0 10px 10px 0;
 }
 
 header {
 	display: flex;
+	flex-direction: column;
+}
+
+.top {
+	display: flex;
+}
+
+.bar {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 0 50px 0;
+	width: 95%;
+}
+
+.home {
+	font-size: xx-large;
+}
+
+.side-nav {
+	background-color: rgba(146, 144, 144, 0.15);
+	padding: 5px 5px 5px 10px;
+	border-top-left-radius: 15px;
+	border-bottom-left-radius: 15px;
+}
+
+.profile {
+	padding: 20px 0 20px 0;
 }
 
 .profile-pic {
-	width: 90%;
+	width: 80%;
 	position: relative;
 }
 
 h1 {
-	position: absolute;
-	bottom: 5px;
-	right: 36px;
+	margin: 0;
+	padding: 10px 0 20px 0;
+	font-size: xx-large;
+}
+
+h2 {
+	position: relative;
+	max-width: 500px;
+	margin: 10px 0 20px 0;
+}
+
+h2:after {
+	content:" ";
+  	height: 2px;
+  	width: 60%;
+  	background: white;
+  	display: block;
+  	position: absolute;
+  	top: 50%;
+  	right: 0;
+	opacity: 0.4;
 }
 
 h3 {
@@ -40,13 +91,30 @@ h3 {
 }
 
 h4 {
-	margin: 20px 0 0 0;
+	margin: 0;
 }
+
+h5 {
+	font-size: large;
+	margin: 0;
+	padding-top: 5px;
+}
+
+hr {
+	color: white;
+}
+
+ul {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+
 
 .nav {
 	display: flex;
 	flex-direction: column;
-	gap: 30px;
+	gap: 20px;
+	margin-top: 30px;
 }
 
 .social {
@@ -54,11 +122,19 @@ h4 {
 	flex-direction: row;
 	flex-wrap: nowrap;
 	justify-content: center;
-	gap: 30px;
+	gap: 35px;
+	padding: 30px 0 30px 0;
 }
 
 .icon {
 	width: 40px;
+	filter: invert(99%) sepia(4%) saturate(146%) hue-rotate(67deg) brightness(113%) contrast(92%);
+}
+
+a {
+	color: #8ae2f1;
+	text-decoration: none;
+	font-size: larger;
 }
 
 .cv {
@@ -82,4 +158,27 @@ h4 {
 
 img {
 	max-width: 100%;
+}
+
+.projects {
+	margin: 40px auto 40px auto;
+}
+
+.small {
+	width: 20px;
+	margin: 5px;
+}
+
+.title {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 10px;
+}
+
+.info {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	padding-bottom: 10px;
 }

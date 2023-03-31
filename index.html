@@ -10,40 +10,35 @@
 </head>
 <body>
     <header>
-        <div class="container profile">
-            <img src="./images/profile_pic_cropped.jpg" alt="Picture of James" class="profile-pic">
-            <h1>James Rae</h1>
+        <div class="container bar" id="bar">
+            <a href="#bar" class="home"><></a>
+            <a href="#contact" class="side-nav">Contact</a>
         </div>
 
-        <nav>
-            <div class="container nav">
-                <h4>Skip to section</h4>
-                <a href="#about">About</a>
-                <a href="#projects">Projects</a>
-                <a href="#contact">contact</a>
+        <div class="container top">
+            <div class="container profile">
+                <h4>Hi, <br>my name is</h4>
+                <h1>James Rae</h1>
+                <h4>Fullstack web developer</h4>
             </div>
-        </nav>
 
+            <nav>
+                <div class="container nav">
+                    <a href="#about" class="side-nav">About</a>
+                    <a href="#projects" class="side-nav">Projects</a>
+                </div>
+            </nav>
+        </div>
+
+        <div class="container tagline">
+            <p>I like to be involved in all steps of development from working on a backend database to designing a interesting, intuative front-end (especially if it's got a dark theme, in case you couldn't tell). </p>
+        </div>
     </header>
 
     <main>
-        <section id="about">
-            <div class="container about">
-                <h2>About me</h2>
-                <p>I'm a passionate self-taught full-stack web developer living in Exeter, Devon.</p>
-                <p>Though i'm currently working as a mechanical design engineer, i'm looking to make the switch to a developer role
-                    to put all of my skills to use in industry.
-                    Since starting some online programming courses in early 2021 i've been hooked and i've been learning and building new projects whenever i get a chance.
-                </p>
-                <p>Ive used a variety of technologies in my journey so far, with my main proficiency in your standard HTML, CSS & vanilla JS for the front end
-                    and Ruby on rails in the back end. But along the way i've also picked up some work in wordpress and C++/arduino in my current engineering role.
-                </p>
-            </div> 
-        </section>
-
         <section class="socials">
             <div class="container social">
-                <a href="./resources/blank_cv.pdf" target="_blank" class="icon cv">CV</a>
+                <a href="./resources/blank_cv.pdf" target="_blank" class="cv">CV</a>
                 <a href="https://github.com/James-rae-eng" target="_blank" class="icon github">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
                 </a>
@@ -53,16 +48,78 @@
             </div>
         </section>
 
+        <section id="about">
+            <div class="container about">
+                <h2>About me</h2>
+                <p>
+                    My name's James Rae and i'm a web developer based in Exeter, Devon.
+                </p>
+                <p>
+                    I've been building and learning all about websites since since starting some online programming courses in early 2021 where i found my passion for all things design & programming.
+                    <br> <br> With my background as a mechanical design engineer i have years of experience with a products' life cycle from concept to testing to legacy maintenance and i love designing and making all manor of things.
+                    Up till now i've been working on my own projects and the odd freelance commission but i'm looking forward to putting my skills to work in industry.
+                </p>
+
+                <img src="./images/profile_pic_cropped.jpg" alt="Picture of James" class="profile-pic">
+
+                <p>
+                    <br>
+                    I've used a variety of technologies in my journey so far, here are a few i've worked with recently:
+                </p>
+                <ul>
+                    <li>HTML & CSS</li>
+                    <li>Javascript</li>
+                    <li>Ruby on Rails</li>
+                    <li>Git</li>
+                    <li>wordpress</li>
+                    <li>C++/Arduino</li>
+                </ul>
+            </div> 
+        </section>
+
         <section id="projects">
             <div class="container projects">
-                <h2>Some of my work</h2>
+                <h2> My work</h2>
                 <section class="fullstack">
                     <h3>Fullstack apps</h3>
                     <div class="cards">
                         <div class="card">
                             <img src="./images/paper.jpg" alt="Picture of this app">
                             <div class="description">
-                                <h5>Social media app (RubyBook)</h5>
+                                <div class="title">
+                                    <h5>Social media app (RubyBook)</h5> 
+                                    <div>
+                                        <a href="https://github.com/James-rae-eng" target="_blank" >
+                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" class="icon small"/>
+                                        </a>
+                                        <a href="https://google.co.uk" target="_blank" class="cv">
+                                            <img src="./images/new_tab.png" alt="Open in new tab icon" class="icon small">  
+                                        </a>
+                                    </div>
+                                </div>
+                                <p>Copycat of facebook but with less ads.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="mini">
+                    <h3>Mini projects</h3>
+                    <div class="cards">
+                        <div class="card">
+                            <img src="./images/paper.jpg" alt="Picture of this app">
+                            <div class="description">
+                                <div class="title">
+                                    <h5>Social media app (RubyBook)</h5> 
+                                    <div>
+                                        <a href="https://github.com/James-rae-eng" target="_blank" >
+                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" class="icon small"/>
+                                        </a>
+                                        <a href="https://google.co.uk" target="_blank" class="cv">
+                                            <img src="./images/new_tab.png" alt="Open in new tab icon" class="icon small">  
+                                        </a>
+                                    </div>
+                                </div>
                                 <p>Copycat of facebook but with less ads.</p>
                             </div>
                         </div>
@@ -70,12 +127,28 @@
                     </div>
                 </section>
 
-                <section class="mini">
-                    <h3>Mini projects</h3>
-                </section>
-
                 <section class="wordpress">
                     <h3>Wordpress websites</h3>
+                    <div class="cards">
+                        <div class="card">
+                            <img src="./images/paper.jpg" alt="Picture of this app">
+                            <div class="description">
+                                <div class="title">
+                                    <h5>Social media app (RubyBook)</h5> 
+                                    <div>
+                                        <a href="https://github.com/James-rae-eng" target="_blank" >
+                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" class="icon small"/>
+                                        </a>
+                                        <a href="https://google.co.uk" target="_blank" class="cv">
+                                            <img src="./images/new_tab.png" alt="Open in new tab icon" class="icon small">  
+                                        </a>
+                                    </div>
+                                </div>
+                                <p>Copycat of facebook but with less ads.</p>
+                            </div>
+                        </div>
+
+                    </div>
                 </section>
             </div>
         </section>
@@ -85,13 +158,15 @@
     <footer>
         <section id="contact">
             <div class="container contact">
-                <h2>Contact me</h2>
-                <p>If you like the look of my projects and think we could work together, please do get in touch.</p>
-                <a href="tel:+07393311510">07393 311 510</a>
-                <a href="mailto:james.rae.eng@gmail.com">James.rae.eng@gmail.com</a>
-                <a href="https://www.linkedin.com/in/james-rae-3060a3164/" target="_blank">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-plain.svg" class="icon linkedin"/>
-                </a>
+                <h2>Contact</h2>
+                <p>If you like the look of my projects/CV and think we could work together, please do get in touch.</p>
+                <div class="info">
+                    <a href="tel:+07393311510">07393 311 510</a>
+                    <a href="mailto:james.rae.eng@gmail.com">James.rae.eng@gmail.com</a>
+                    <a href="https://www.linkedin.com/in/james-rae-3060a3164/" target="_blank">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-plain.svg" class="icon linkedin"/>
+                    </a>  
+                </div>
             </div>
         </section>
     </footer>
