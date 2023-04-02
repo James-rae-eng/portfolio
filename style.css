@@ -4,12 +4,12 @@ html {
 }
 
 body {
-	background: url(images/speckle_background.jpg) no-repeat center center fixed;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+	url(images/blue_background.jpg); 
 	background-size: cover;
-	color: white;
+	background-repeat: no-repeat;
+	background-position: center;
+	color: #FFFDEA;
 }
 
 .container {
@@ -42,12 +42,23 @@ header {
 	width: 95%;
 }
 
+.bar:after {
+	content:" ";
+  	height: 2px;
+  	width: 100%;
+  	background: #EFCC7B;
+  	display: block;
+  	position: absolute;
+  	top: 50%;
+	opacity: 0.8;
+}
+
 .home {
 	font-size: xx-large;
 }
 
 .side-nav {
-	background-color: rgba(146, 144, 144, 0.15);
+	background-color: rgba(53, 53, 53, 0.7);
 	padding: 5px 5px 5px 10px;
 	border-top-left-radius: 15px;
 	border-bottom-left-radius: 15px;
@@ -66,7 +77,9 @@ h1 {
 	margin: 0;
 	padding: 10px 0 20px 0;
 	font-size: xx-large;
+	color: #EFCC7B;
 }
+
 
 h2 {
 	position: relative;
@@ -78,12 +91,12 @@ h2:after {
 	content:" ";
   	height: 2px;
   	width: 60%;
-  	background: white;
+  	background: #EFCC7B;
   	display: block;
   	position: absolute;
   	top: 50%;
   	right: 0;
-	opacity: 0.4;
+	opacity: 0.8;
 }
 
 h3 {
@@ -100,9 +113,6 @@ h5 {
 	padding-top: 5px;
 }
 
-hr {
-	color: white;
-}
 
 ul {
 	display: grid;
@@ -132,7 +142,7 @@ ul {
 }
 
 a {
-	color: #8ae2f1;
+	color: #FFFDEA;
 	text-decoration: none;
 	font-size: larger;
 }
@@ -153,7 +163,7 @@ a {
 
 .card {
 	padding: 5px;
-	border: 2px solid black;
+	background-color: #003136;
 }
 
 img {
