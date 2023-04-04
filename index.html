@@ -10,9 +10,14 @@
 </head>
 <body>
     <header>
-        <div class="container bar" id="bar">
+        <div class="bar" id="bar">
             <a href="#bar" class="home"><></a>
-            <a href="#contact" class="side-nav">Contact</a>
+            <div class="big-nav">
+                <a href="#about" class="side-nav" id="hide">About</a>
+                <a href="#projects" class="side-nav" id="hide">Projects</a>
+                <a href="#contact" class="side-nav">Contact</a>
+            </div>
+            
         </div>
 
         <div class="container top">
@@ -51,17 +56,23 @@
         <section id="about">
             <div class="container about">
                 <h2>About me</h2>
-                <p>
-                    My name's James Rae and i'm a web developer based in Exeter, Devon.
-                </p>
-                <p>
-                    I've been building and learning all about websites since since starting some online programming courses in early 2021 where i found my passion for all things design & programming.
-                    <br> <br> With my background as a mechanical design engineer i have years of experience with a products' life cycle from concept to testing to legacy maintenance and i love designing and making all manor of things.
-                    Up till now i've been working on my own projects and the odd freelance commission but i'm looking forward to putting my skills to work in industry.
-                </p>
-
-                <img src="./images/profile_pic_cropped.jpg" alt="Picture of James" class="profile-pic">
-
+                <div class="my-info">
+                    <div>
+                        <p>
+                            My name's James Rae and i'm a web developer based in Exeter, Devon.
+                        </p>
+                        <p>
+                            I've been building and learning all about websites since since starting some online programming courses in early 2021 where i found my passion for all things design & programming.
+                            <br>
+                        </p>
+                        <p>
+                            With my background as a mechanical design engineer i have years of experience with a products' life cycle from concept to testing to legacy maintenance and i love designing and making all manor of things.
+                            Up till now i've been working on my own projects and the odd freelance commission but i'm looking forward to putting my skills to work in industry.
+                        </p>
+                    </div>
+                    
+                    <img src="./images/profile_pic_cropped.jpg" alt="Picture of James" class="profile-pic">
+                </div>
                 <p>
                     <br>
                     I've used a variety of technologies in my journey so far, here are a few i've worked with recently:
@@ -83,6 +94,23 @@
                 <section class="fullstack">
                     <h3>Fullstack apps</h3>
                     <div class="cards">
+                        <div class="card">
+                            <img src="./images/paper.jpg" alt="Picture of this app">
+                            <div class="description">
+                                <div class="title">
+                                    <h5>Social media app (RubyBook)</h5> 
+                                    <div>
+                                        <a href="https://github.com/James-rae-eng" target="_blank" >
+                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" class="icon small"/>
+                                        </a>
+                                        <a href="https://google.co.uk" target="_blank" class="cv">
+                                            <img src="./images/new_tab.png" alt="Open in new tab icon" class="icon small">  
+                                        </a>
+                                    </div>
+                                </div>
+                                <p>Copycat of facebook but with less ads.</p>
+                            </div>
+                        </div>
                         <div class="card">
                             <img src="./images/paper.jpg" alt="Picture of this app">
                             <div class="description">
@@ -123,7 +151,23 @@
                                 <p>Copycat of facebook but with less ads.</p>
                             </div>
                         </div>
-
+                        <div class="card">
+                            <img src="./images/paper.jpg" alt="Picture of this app">
+                            <div class="description">
+                                <div class="title">
+                                    <h5>Social media app (RubyBook)</h5> 
+                                    <div>
+                                        <a href="https://github.com/James-rae-eng" target="_blank" >
+                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" class="icon small"/>
+                                        </a>
+                                        <a href="https://google.co.uk" target="_blank" class="cv">
+                                            <img src="./images/new_tab.png" alt="Open in new tab icon" class="icon small">  
+                                        </a>
+                                    </div>
+                                </div>
+                                <p>Copycat of facebook but with less ads.</p>
+                            </div>
+                        </div>
                     </div>
                 </section>
 
@@ -159,8 +203,8 @@
         <section id="contact">
             <div class="container contact">
                 <h2>Contact</h2>
-                <p>If you like the look of my projects/CV and think we could work together, please do get in touch.</p>
-                <div class="info">
+                <div class="contact-info">
+                    <p>If you like the look of my projects/CV and think we could work together, please get in touch.</p>
                     <a href="tel:+07393311510">07393 311 510</a>
                     <a href="mailto:james.rae.eng@gmail.com">James.rae.eng@gmail.com</a>
                     <a href="https://www.linkedin.com/in/james-rae-3060a3164/" target="_blank">
