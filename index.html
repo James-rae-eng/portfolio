@@ -10,49 +10,33 @@
 </head>
 <body>
     <header>
-        <div class="bar" id="bar">
-            <a href="#bar" class="home"><></a>
+        <nav class="bar" id="bar">
+            <a href="#bar" class="side-nav">Home</a>
             <div class="big-nav">
-                <a href="#about" class="side-nav" id="hide">About</a>
-                <a href="#projects" class="side-nav" id="hide">Projects</a>
+                <a href="#about" class="side-nav" >About</a>
+                <a href="#projects" class="side-nav" >Projects</a>
                 <a href="#contact" class="side-nav">Contact</a>
+            </div>
+        </nav>
+        <div class="curve"></div>
+
+        <div class="container top">
+            <div class="profile">
+                <div class="name">
+                    <h4>Hi, <br>my name is</h4>
+                    <h1>James Rae</h1>
+                    <h4>Fullstack web developer</h4>
+                    <p class="tagline">I like to be involved in all steps of development from working on a backend database to designing a interesting, intuative front-end (especially if it's got a dark theme, in case you couldn't tell). </p>
+                </div>
+                <img src="./images/main-pic.png" alt="creative png from pngtree.com" class="main-pic">
             </div>
             
         </div>
 
-        <div class="container top">
-            <div class="container profile">
-                <h4>Hi, <br>my name is</h4>
-                <h1>James Rae</h1>
-                <h4>Fullstack web developer</h4>
-            </div>
-
-            <nav>
-                <div class="container nav">
-                    <a href="#about" class="side-nav">About</a>
-                    <a href="#projects" class="side-nav">Projects</a>
-                </div>
-            </nav>
-        </div>
-
-        <div class="container tagline">
-            <p>I like to be involved in all steps of development from working on a backend database to designing a interesting, intuative front-end (especially if it's got a dark theme, in case you couldn't tell). </p>
-        </div>
     </header>
 
     <main>
-        <section class="socials">
-            <div class="container social">
-                <a href="./resources/blank_cv.pdf" target="_blank" class="cv">CV</a>
-                <a href="https://github.com/James-rae-eng" target="_blank" class="icon github">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
-                </a>
-                <a href="https://www.linkedin.com/in/james-rae-3060a3164/" target="_blank" class="icon linkedin">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-plain.svg" />
-                </a>
-            </div>
-        </section>
-
+        
         <section id="about">
             <div class="container about">
                 <h2>About me</h2>
@@ -73,24 +57,39 @@
                     
                     <img src="./images/profile_pic_cropped.jpg" alt="Picture of James" class="profile-pic">
                 </div>
+
+                <section class="socials">
+                    <div class="container social">
+                        <a href="./resources/blank_cv.pdf" target="_blank" class="cv">CV</a>
+                        <a href="https://github.com/James-rae-eng" target="_blank" class="icon github">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
+                        </a>
+                        <a href="https://www.linkedin.com/in/james-rae-3060a3164/" target="_blank" class="icon linkedin">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-plain.svg" />
+                        </a>
+                    </div>
+                </section>
                 <p>
                     <br>
                     I've used a variety of technologies in my journey so far, here are a few i've worked with recently:
                 </p>
                 <ul>
-                    <li>HTML & CSS</li>
-                    <li>Javascript</li>
-                    <li>Ruby on Rails</li>
-                    <li>Git</li>
-                    <li>wordpress</li>
-                    <li>C++/Arduino</li>
+                    <li class="html5">HTML5</li> 
+                    <li class="css3">CSS</li>
+                    <li class="js">Javascript</li>
+                    <li class="rails">Ruby on Rails</li>
+                    <li class="git">Git</li>
+                    <li class="wordpress">Wordpress</li>
+                    <li class="arduino">C++/Arduino</li>
+                    <li class="vs">Visual Studio</li>
                 </ul>
             </div> 
         </section>
 
         <section id="projects">
             <div class="container projects">
-                <h2> My work</h2>
+                <h2>My work</h2>
+
                 <section class="fullstack">
                     <h3>Fullstack apps</h3>
                     <div class="cards">
@@ -131,8 +130,8 @@
                     </div>
                 </section>
 
-                <section class="mini">
-                    <h3>Mini projects</h3>
+                <section class="other">
+                    <h3>Other notable projects</h3>
                     <div class="cards">
                         <div class="card">
                             <img src="./images/paper.jpg" alt="Picture of this app">
@@ -168,30 +167,23 @@
                                 <p>Copycat of facebook but with less ads.</p>
                             </div>
                         </div>
-                    </div>
-                </section>
-
-                <section class="wordpress">
-                    <h3>Wordpress websites</h3>
-                    <div class="cards">
                         <div class="card">
-                            <img src="./images/paper.jpg" alt="Picture of this app">
+                            <img src="./images/sonsofivaldi.png" alt="sons of ivaldi website screenshot">
                             <div class="description">
                                 <div class="title">
-                                    <h5>Social media app (RubyBook)</h5> 
+                                    <h5>The sons of ivaldi</h5> 
                                     <div>
-                                        <a href="https://github.com/James-rae-eng" target="_blank" >
-                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" class="icon small"/>
-                                        </a>
-                                        <a href="https://google.co.uk" target="_blank" class="cv">
+                                        <a href="https://sonsofivaldi.co.uk" target="_blank" class="cv">
                                             <img src="./images/new_tab.png" alt="Open in new tab icon" class="icon small">  
                                         </a>
                                     </div>
                                 </div>
-                                <p>Copycat of facebook but with less ads.</p>
+                                <p>The sons of ivaldi are a trio of craftsmen that run their own busninessses and travel to craft festivals together to run courses. 
+                                    <br> I designed & built this website for them to help grow their business, built using wordpress and set up with custom templates 
+                                    to allow them to easily update the site with upcoming events and manage new bookings.
+                                </p>
                             </div>
                         </div>
-
                     </div>
                 </section>
             </div>
@@ -202,9 +194,9 @@
     <footer>
         <section id="contact">
             <div class="container contact">
-                <h2>Contact</h2>
+                <h2 class="contact-head">Contact</h2>
                 <div class="contact-info">
-                    <p>If you like the look of my projects/CV and think we could work together, please get in touch.</p>
+                    <p class="contact-line">If you like the look of my projects/CV and think we could work together, please get in touch.</p>
                     <a href="tel:+07393311510">07393 311 510</a>
                     <a href="mailto:james.rae.eng@gmail.com">James.rae.eng@gmail.com</a>
                     <a href="https://www.linkedin.com/in/james-rae-3060a3164/" target="_blank">
