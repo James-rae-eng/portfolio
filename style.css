@@ -65,9 +65,18 @@ header {
 }
 
 
-.side-nav {
+nav a{
 	border-bottom: 2px solid white;
+	position: relative;
+	top: 0;
+	transition: bottom ease .5s;
 }
+
+nav a:hover {
+	top: 5px;
+	color: #EFCC7B;
+}
+
 
 .profile {
 	display: flex;
@@ -104,12 +113,11 @@ header {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	/*
-	background-image: url("images/sphere_half_left.png"), url("images/sphere_half_right.png");
-	background-position: 1% 10%, 99% 90%;
+
+	background-image: url("images/dot-wave-final.png");
+	background-size: 100% 100%;
 	background-repeat: no-repeat;
-	background-size: 30%;
-	*/
+	background-position: center;
 }
 
 .my-info {
@@ -120,6 +128,7 @@ header {
 	gap: 50px;
 	backdrop-filter: blur(4px);
 	padding: 10px;
+	margin-top: 70px;
 }
 
 .profile-pic {
@@ -140,36 +149,25 @@ h1 {
 
 
 h2 {
-	position: relative;
 	text-align: center;
 	font-family: "fjalla";
 	font-size: 3rem;
-	margin: 60px 0 60px 0;
+	margin: 10px auto 50px auto;
+
+	display: grid;
+    grid-template-columns: 3em max-content 3em;
+    grid-template-rows: 27px 0;
+    grid-gap: 20px;
+    align-items: center;
 }
 
-h2:before {
-	content:" ";
-  	height: 2px;
-  	width: 20%;
-  	background: #EFCC7B;
-  	display: block;
-  	position: absolute;
-  	top: 50%;
-  	left: 20%;
-	opacity: 0.8;
+h2:after, h2:before {
+    content: " ";
+    display: block;
+    border-top: 2px solid #EFCC7B;
+    height: 45px;
 }
 
-h2:after {
-	content:" ";
-  	height: 2px;
-  	width: 20%;
-  	background: #EFCC7B;
-  	display: block;
-  	position: absolute;
-  	top: 50%;
-  	right: 20%;
-	opacity: 0.8;
-}
 
 h3 {
 	text-align: center;
@@ -199,7 +197,7 @@ ul {
 	list-style: none;
 	backdrop-filter: blur(4px);
 	padding: 10px;
-	margin-bottom: 80px;
+	margin-bottom: 200px;
 }
 
 li {
@@ -232,9 +230,23 @@ li::before {
 	border-radius: 50px;
 }
 
+.social a{
+	transition: transform .3s;
+}
+
+.social a:hover {
+	transform: scale(1.2);
+	color: #EFCC7B;
+}
+
 .icon {
 	width: 40px;
 	filter: invert(99%) sepia(4%) saturate(146%) hue-rotate(67deg) brightness(113%) contrast(92%);
+	transition: transform .3s;
+}
+
+.icon:hover {
+	transform: scale(1.2);
 }
 
 .html5::before {
@@ -285,6 +297,9 @@ a {
 
 .cv {
 	align-self: center;
+	font-weight: bold;
+	font-size: x-large;
+	border-bottom: 2px solid white;
 }
 
 .contact {
@@ -312,7 +327,10 @@ img {
 }
 
 .projects {
-	margin: 60px auto 40px auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: auto auto 40px auto;
 }
 
 .small {
@@ -328,7 +346,7 @@ img {
 }
 
 .contact-head {
-	margin-bottom: 20px;
+	margin: 100px auto 20px auto;
 }
 
 .contact-info {
